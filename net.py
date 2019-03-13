@@ -85,10 +85,9 @@ def train_model(x_train, y_train, x_test, y_test, epochs = 100):
     del model
 
 def predict(x_test, y_test):
+    """Load model and get predictions"""
+
     model = load_model('my_model.h5')
-
-
-    print(x_test[20:50])
 
     predictions = model.predict(x_test)
 
